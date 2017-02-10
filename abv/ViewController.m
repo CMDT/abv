@@ -18,24 +18,25 @@
     float keyboardAnimDelay;
 }
 
-@synthesize abvTF,
-alcTF,
-alcWtLBL,
-alcVolLBL,
-portionsLBL,
-mixTF,
-mixWtLBL,
-mixVolLBL,
-unitsTF,
-bottleSzTF,
-totWtLBL,
-totVolLBL,
-calculate;
+@synthesize
+    abvTF,
+    alcTF,
+    alcWtLBL,
+    alcVolLBL,
+    portionsLBL,
+    mixTF,
+    mixWtLBL,
+    mixVolLBL,
+    unitsTF,
+    bottleSzTF,
+    totWtLBL,
+    totVolLBL,
+    calculate;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    keyboardAnim = YES;
+    keyboardAnim      = YES;
     keyboardAnimSpeed = 1;
     keyboardAnimDelay = 1;
     
@@ -43,6 +44,7 @@ calculate;
     mixTF.delegate      = self;
     unitsTF.delegate    = self;
     bottleSzTF.delegate = self;
+    abvTF.delegate      = self;
     
     [self calculateButtonPressed:nil];
 }
@@ -161,92 +163,61 @@ calculate;
         alcTF.textColor = [UIColor redColor];
         alcTF.text = @"0.5";
         alcTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        alcTF.textColor = [UIColor blackColor];
-        alcTF.backgroundColor = [UIColor whiteColor];
     }
     
     if ([alcTF.text floatValue] > 1.0) {
         alcTF.textColor = [UIColor redColor];
         alcTF.text = @"1.0";
         alcTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        alcTF.textColor = [UIColor blackColor];
-        alcTF.backgroundColor = [UIColor whiteColor];
     }
     
     if ([mixTF.text floatValue] <= 0.5) {
         mixTF.textColor = [UIColor redColor];
         mixTF.text = @"0.5";
         mixTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        mixTF.textColor = [UIColor blackColor];
-        mixTF.backgroundColor = [UIColor whiteColor];
     }
     
     if ([mixTF.text floatValue] > 4.0) {
         mixTF.textColor = [UIColor redColor];
         mixTF.text = @"4.0";
         mixTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        mixTF.textColor = [UIColor blackColor];
-        mixTF.backgroundColor = [UIColor whiteColor];
     }
     
-    if ([unitsTF.text floatValue] <= 0.0) {
+    if ([unitsTF.text floatValue] <= 0.1) {
         unitsTF.textColor = [UIColor redColor];
-        unitsTF.text = @"0.0";
+        unitsTF.text = @"0.1";
         unitsTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        unitsTF.textColor = [UIColor blackColor];
-        unitsTF.backgroundColor = [UIColor whiteColor];
     }
     
     if ([unitsTF.text floatValue] > 50.0) {
         unitsTF.textColor = [UIColor redColor];
         unitsTF.text = @"50.0";
         unitsTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        unitsTF.textColor = [UIColor blackColor];
-        unitsTF.backgroundColor = [UIColor whiteColor];
     }
     
     if ([bottleSzTF.text floatValue] <= 0.1) {
         bottleSzTF.textColor = [UIColor redColor];
         bottleSzTF.text = @"0.1";
         bottleSzTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        bottleSzTF.textColor = [UIColor blackColor];
-        bottleSzTF.backgroundColor = [UIColor whiteColor];
     }
     
     if ([bottleSzTF.text floatValue] > 100000.0) {
         bottleSzTF.textColor = [UIColor redColor];
         bottleSzTF.text = @"100000.0";
         bottleSzTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        bottleSzTF.textColor = [UIColor blackColor];
-        bottleSzTF.backgroundColor = [UIColor whiteColor];
     }
     
     if ([abvTF.text floatValue] <= 0.1) {
         abvTF.textColor = [UIColor redColor];
         abvTF.text = @"0.1";
         abvTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        abvTF.textColor = [UIColor blackColor];
-        abvTF.backgroundColor = [UIColor whiteColor];
     }
     
-    if ([abvTF.text floatValue] > 100000.0) {
+    if ([abvTF.text floatValue] > 100.0) {
         abvTF.textColor = [UIColor redColor];
-        abvTF.text = @"100000.0";
+        abvTF.text = @"100.0";
         abvTF.backgroundColor = [UIColor yellowColor];
-    }else{
-        abvTF.textColor = [UIColor blackColor];
-        abvTF.backgroundColor = [UIColor whiteColor];
     }
-    
     //update calcs
     [self calculateButtonPressed:nil];
 }

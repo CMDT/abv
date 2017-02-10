@@ -17,13 +17,13 @@
     okGoNow = NO;
    
     UIAlertController * alertView =   [UIAlertController
-                                       alertControllerWithTitle:@"ABV App"
+                                       alertControllerWithTitle:@"ABV Alcohol App"
                                        message:@"Read The Instructions First..."
                                        preferredStyle:UIAlertControllerStyleAlert];
     
     alertView.view.tintColor          = [UIColor blueColor];//Agree button colour
     
-    NSMutableAttributedString *textMessage = [[NSMutableAttributedString alloc] initWithString:@"To see details on how to use this\nApplication and adjust its settings,\nplease read the notes under the\n'(i)Information' Tab-Bar choice.\n\n* Safety Note *\nTake regular breaks and avoid\n strain. If you develop discomfort\n using this App,you must stop\n using it and seek advice.\n\nThis Application is NOT\n for clinical use.\n\nv1.0.1, Copyright © 9.Feb.2017"];
+    NSMutableAttributedString *textMessage = [[NSMutableAttributedString alloc] initWithString:@"To see details on how to use this\nApplication and adjust its settings,\nplease read the notes under the\n'(i)Information' Tab-Bar choice.\n\n* Safety Note *\nTake regular breaks and avoid\n strain. If you develop discomfort\n using this App,you must stop\n using it and seek advice.\n\nThis Application is NOT\n for clinical use.\n\nv1.0.2, Copyright © 10.Feb.2017"];
     
     long lens = [textMessage length];
     [textMessage addAttribute:NSFontAttributeName
