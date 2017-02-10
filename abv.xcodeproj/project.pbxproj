@@ -13,6 +13,14 @@
 		E11FF7811E4DA8CF009AF0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11FF77F1E4DA8CF009AF0A9 /* Main.storyboard */; };
 		E11FF7831E4DA8CF009AF0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11FF7821E4DA8CF009AF0A9 /* Assets.xcassets */; };
 		E11FF7861E4DA8CF009AF0A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11FF7841E4DA8CF009AF0A9 /* LaunchScreen.storyboard */; };
+		E11FF7951E4DADC4009AF0A9 /* about50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = E11FF78D1E4DADC4009AF0A9 /* about50x50.png */; };
+		E11FF7961E4DADC4009AF0A9 /* about50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E11FF78E1E4DADC4009AF0A9 /* about50x50@2x.png */; };
+		E11FF7971E4DADC4009AF0A9 /* calc50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = E11FF78F1E4DADC4009AF0A9 /* calc50x50.png */; };
+		E11FF7981E4DADC4009AF0A9 /* calc50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E11FF7901E4DADC4009AF0A9 /* calc50x50@2x.png */; };
+		E11FF7991E4DADC4009AF0A9 /* results50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = E11FF7911E4DADC4009AF0A9 /* results50x50.png */; };
+		E11FF79A1E4DADC4009AF0A9 /* results50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E11FF7921E4DADC4009AF0A9 /* results50x50@2x.png */; };
+		E11FF79B1E4DADC4009AF0A9 /* settings50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = E11FF7931E4DADC4009AF0A9 /* settings50x50.png */; };
+		E11FF79C1E4DADC4009AF0A9 /* settings50x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E11FF7941E4DADC4009AF0A9 /* settings50x50@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		E11FF7821E4DA8CF009AF0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E11FF7851E4DA8CF009AF0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E11FF7871E4DA8CF009AF0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11FF78D1E4DADC4009AF0A9 /* about50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = about50x50.png; path = ../../../../../VO2master/VO2/VO2/about50x50.png; sourceTree = "<group>"; };
+		E11FF78E1E4DADC4009AF0A9 /* about50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "about50x50@2x.png"; path = "../../../../../VO2master/VO2/VO2/about50x50@2x.png"; sourceTree = "<group>"; };
+		E11FF78F1E4DADC4009AF0A9 /* calc50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calc50x50.png; path = ../../../../../VO2master/VO2/VO2/calc50x50.png; sourceTree = "<group>"; };
+		E11FF7901E4DADC4009AF0A9 /* calc50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calc50x50@2x.png"; path = "../../../../../VO2master/VO2/VO2/calc50x50@2x.png"; sourceTree = "<group>"; };
+		E11FF7911E4DADC4009AF0A9 /* results50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = results50x50.png; path = ../../../../../VO2master/VO2/VO2/results50x50.png; sourceTree = "<group>"; };
+		E11FF7921E4DADC4009AF0A9 /* results50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "results50x50@2x.png"; path = "../../../../../VO2master/VO2/VO2/results50x50@2x.png"; sourceTree = "<group>"; };
+		E11FF7931E4DADC4009AF0A9 /* settings50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings50x50.png; path = ../../../../../VO2master/VO2/VO2/settings50x50.png; sourceTree = "<group>"; };
+		E11FF7941E4DADC4009AF0A9 /* settings50x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings50x50@2x.png"; path = "../../../../../VO2master/VO2/VO2/settings50x50@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,13 @@
 		E11FF7751E4DA8CF009AF0A9 /* abv */ = {
 			isa = PBXGroup;
 			children = (
+				E11FF7841E4DA8CF009AF0A9 /* LaunchScreen.storyboard */,
+				E11FF77F1E4DA8CF009AF0A9 /* Main.storyboard */,
 				E11FF7791E4DA8CF009AF0A9 /* AppDelegate.h */,
 				E11FF77A1E4DA8CF009AF0A9 /* AppDelegate.m */,
 				E11FF77C1E4DA8CF009AF0A9 /* ViewController.h */,
 				E11FF77D1E4DA8CF009AF0A9 /* ViewController.m */,
-				E11FF77F1E4DA8CF009AF0A9 /* Main.storyboard */,
 				E11FF7821E4DA8CF009AF0A9 /* Assets.xcassets */,
-				E11FF7841E4DA8CF009AF0A9 /* LaunchScreen.storyboard */,
 				E11FF7871E4DA8CF009AF0A9 /* Info.plist */,
 				E11FF7761E4DA8CF009AF0A9 /* Supporting Files */,
 			);
@@ -74,6 +90,14 @@
 		E11FF7761E4DA8CF009AF0A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E11FF78D1E4DADC4009AF0A9 /* about50x50.png */,
+				E11FF78E1E4DADC4009AF0A9 /* about50x50@2x.png */,
+				E11FF78F1E4DADC4009AF0A9 /* calc50x50.png */,
+				E11FF7901E4DADC4009AF0A9 /* calc50x50@2x.png */,
+				E11FF7911E4DADC4009AF0A9 /* results50x50.png */,
+				E11FF7921E4DADC4009AF0A9 /* results50x50@2x.png */,
+				E11FF7931E4DADC4009AF0A9 /* settings50x50.png */,
+				E11FF7941E4DADC4009AF0A9 /* settings50x50@2x.png */,
 				E11FF7771E4DA8CF009AF0A9 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -139,8 +163,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E11FF7861E4DA8CF009AF0A9 /* LaunchScreen.storyboard in Resources */,
+				E11FF79B1E4DADC4009AF0A9 /* settings50x50.png in Resources */,
 				E11FF7831E4DA8CF009AF0A9 /* Assets.xcassets in Resources */,
+				E11FF7951E4DADC4009AF0A9 /* about50x50.png in Resources */,
+				E11FF7971E4DADC4009AF0A9 /* calc50x50.png in Resources */,
+				E11FF7981E4DADC4009AF0A9 /* calc50x50@2x.png in Resources */,
+				E11FF7961E4DADC4009AF0A9 /* about50x50@2x.png in Resources */,
 				E11FF7811E4DA8CF009AF0A9 /* Main.storyboard in Resources */,
+				E11FF7991E4DADC4009AF0A9 /* results50x50.png in Resources */,
+				E11FF79C1E4DADC4009AF0A9 /* settings50x50@2x.png in Resources */,
+				E11FF79A1E4DADC4009AF0A9 /* results50x50@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
