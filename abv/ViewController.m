@@ -31,7 +31,8 @@
     bottleSzTF,
     totWtLBL,
     totVolLBL,
-    calculate;
+    calculate,
+    informationText;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,6 +47,9 @@
     bottleSzTF.delegate = self;
     abvTF.delegate      = self;
     
+    //add text to information screen
+    informationText.text=@"This calculator will give you the volume and weight of beverage for a fixed number of UK alcohol units, taking into account the specific gravity (S.G.) of the alcohol mix (ethanol/other alcohols), and the base carrier (usually water).\n\nYou may need to adjust the S.G.'s of both depending upon the sugar and solids content of the components, as the weights and values will change dependent upon the alteration of the S.G. of the substances involved.\n\nA Unit of Alcohol is 10ml of pure alcohol or 7.87g of pure alcohol.\n\nFrom the beverage product information, look for the ABV value in %, and enter it in the ABV field.\n\nEnter the number of Alcohol Units you wish to calculate the volume and weight data.\n\nPlease NOTE:\n\nThis calculator is NOT to be used for clinical or legal purposes.\n\nThis calculator is for Educational and learning purposes only, and any actual consumption of alcohol is purely the responsibility of the consumer and NOT  in any way this application.\n\nThis App developed by Jonathan Howell, Manchester Metropolitan University.\n\nwww.ess.mmu.ac.uk for more information.\n\nCopyright ©2017";
+    
     [self calculateButtonPressed:nil];
 }
 
@@ -56,8 +60,6 @@
 -(IBAction)calculateButtonPressed:(id)sender{
     [self doCalculations];
 }
-
-
 
 -(void) doCalculations{
 //Calculations every time the values change

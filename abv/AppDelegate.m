@@ -13,7 +13,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
     okGoNow = NO;
    
     UIAlertController * alertView =   [UIAlertController
@@ -48,7 +47,6 @@
      //range:NSMakeRange(24, 11)];//splits string to when font size starts
                         range:NSMakeRange(lens-30, 30)];//splits string to when font size starts and ends in characters starting at zero
     [alertView setValue:textMessage forKey:@"attributedMessage"]; //@"attributedTitle"]; //the text field you want font size and style to effect
-    
     
     //[[UIView appearanceWhenContainedIn:UIAlertController.class, nil] setBackgroundColor:[UIColor yellowColor]];
     
@@ -105,8 +103,6 @@
     
     return YES;
 }
-
-
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

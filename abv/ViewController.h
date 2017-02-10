@@ -27,6 +27,8 @@
 @property (strong, nonatomic) IBOutlet UILabel * mixVolLBL;
 @property (strong, nonatomic) IBOutlet UILabel * totVolLBL;
 
+@property (weak, nonatomic) IBOutlet UITextView *informationText;
+
 @property (weak, nonatomic) IBOutlet UIButton *calculate;
 - (IBAction)alcChanged:(id)sender;
 - (IBAction)mixChanged:(id)sender;

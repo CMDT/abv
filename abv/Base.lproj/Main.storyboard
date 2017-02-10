@@ -12,7 +12,7 @@
         <!--Information-->
         <scene sceneID="Iim-HV-obt">
             <objects>
-                <viewController restorationIdentifier="information" storyboardIdentifier="information" id="daP-Zz-aXj" sceneMemberID="viewController">
+                <viewController restorationIdentifier="information" storyboardIdentifier="information" modalTransitionStyle="crossDissolve" id="daP-Zz-aXj" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dDK-Ht-mCi"/>
                         <viewControllerLayoutGuide type="bottom" id="3sK-p8-EMn"/>
@@ -42,53 +42,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">This calculator will give you the volume and weight of beverage for a fixed number of UK alcohol units, taking intoaccount the specif gravity of the alcohol mix (ethanol/other alcohols, and the base carrier (usually water).  
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="15"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="15"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">You may need to adjust the SG's of both depending upon the sugar and solids content of the components, as the weights and values will change dependent upon the alteration of the SG of the substances involved.
-
-A Unit of Alcohol is 10ml of pure alcohol or 7.87g of pure alcohol.
-
-From the berverage product information, look for the ABV value in %, and enter it in the ABV field.
-
-Enter the number of Alcohol Units you wish to calculate the volume and weight data.
-
-Please NOTE:
-
-This calculator is NOT to be used for clinical or legal purposes.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="15"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">This calculator is for Educational and learning purposes only, and any actual consumption of alcohol is purely the responsibility of the consumer and NOT  in any way this application.
-</string>
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="15"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-This App developed by Jonathan Howell, Manchester Metropolitan University.
-
-www.ess.mmu.ac.uk for more information.</string>
+                                    <fragment content="text information">
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="15"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -102,6 +56,9 @@ www.ess.mmu.ac.uk for more information.</string>
                         <color key="backgroundColor" red="0.89420127579999997" green="1" blue="0.66009751149999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Information" image="about50x50.png" selectedImage="about50x50.png" id="SBp-QV-ACM" userLabel="Information"/>
+                    <connections>
+                        <outlet property="informationText" destination="mUP-yX-Tch" id="jhp-a0-17y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAQ-Wd-leB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +67,7 @@ www.ess.mmu.ac.uk for more information.</string>
         <!--Calculator-->
         <scene sceneID="jpP-ef-c0p">
             <objects>
-                <viewController restorationIdentifier="calculator" storyboardIdentifier="calculator" id="CQ4-2T-IWn" customClass="ViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="calculator" storyboardIdentifier="calculator" modalTransitionStyle="crossDissolve" id="CQ4-2T-IWn" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z3e-dg-ddl"/>
                         <viewControllerLayoutGuide type="bottom" id="cwx-PT-ZuJ"/>
@@ -171,7 +128,7 @@ www.ess.mmu.ac.uk for more information.</string>
                                     <action selector="abvChanged:" destination="CQ4-2T-IWn" eventType="editingDidEnd" id="AFv-Ah-VNz"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8fz-ZI-2zF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2.0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8fz-ZI-2zF">
                                 <rect key="frame" x="195" y="174" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -395,10 +352,10 @@ www.ess.mmu.ac.uk for more information.</string>
             </objects>
             <point key="canvasLocation" x="918.75" y="-468.75"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar Navigation Controller-->
         <scene sceneID="CEj-ey-r2G">
             <objects>
-                <tabBarController id="TnY-J7-ymd" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="navigation" title="Tab Bar Navigation Controller" modalTransitionStyle="crossDissolve" id="TnY-J7-ymd" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="tmm-LC-ewQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
