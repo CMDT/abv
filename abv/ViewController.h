@@ -14,25 +14,27 @@
 @property (strong, nonatomic) IBOutlet UITextField * mixTF;
 @property (strong, nonatomic) IBOutlet UITextField * abvTF;
 @property (strong, nonatomic) IBOutlet UITextField * unitsTF;
-
 @property (strong, nonatomic) IBOutlet UITextField * bottleSzTF;
 
-@property (strong, nonatomic) IBOutlet UILabel * portionsLBL;
+@property (strong, nonatomic) IBOutlet UILabel     * portionsLBL;
 
-@property (strong, nonatomic) IBOutlet UILabel * alcWtLBL;
-@property (strong, nonatomic) IBOutlet UILabel * mixWtLBL;
-@property (strong, nonatomic) IBOutlet UILabel * totWtLBL;
+@property (strong, nonatomic) IBOutlet UILabel     * alcWtLBL;
+@property (strong, nonatomic) IBOutlet UILabel     * mixWtLBL;
+@property (strong, nonatomic) IBOutlet UILabel     * totWtLBL;
 
-@property (strong, nonatomic) IBOutlet UILabel * alcVolLBL;
-@property (strong, nonatomic) IBOutlet UILabel * mixVolLBL;
-@property (strong, nonatomic) IBOutlet UILabel * totVolLBL;
+@property (strong, nonatomic) IBOutlet UILabel     * alcVolLBL;
+@property (strong, nonatomic) IBOutlet UILabel     * mixVolLBL;
+@property (strong, nonatomic) IBOutlet UITextField * totVolTF;
 
-@property (weak, nonatomic) IBOutlet UITextView *informationText;
+@property (weak, nonatomic) IBOutlet UITextView    * informationText;
 
-@property (weak, nonatomic) IBOutlet UIButton *calculate;
+@property (weak, nonatomic) IBOutlet UIButton      * calculate;
+
 - (IBAction)alcChanged:(id)sender;
 - (IBAction)mixChanged:(id)sender;
 - (IBAction)abvChanged:(id)sender;
 - (IBAction)unitsChanged:(id)sender;
 - (IBAction)bottleChanged:(id)sender;
+- (IBAction)volChanged:(id)sender;
+
 @end

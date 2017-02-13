@@ -13,6 +13,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //for settings app icon etc
+    NSString       * pathStr               = [[NSBundle mainBundle] bundlePath];
+    NSString       * settingsBundlePath    = [pathStr stringByAppendingPathComponent:           @"Settings.bundle"];
+    NSString       * defaultPrefsFile      = [settingsBundlePath stringByAppendingPathComponent:@"Root.plist"];
+    NSDictionary   * defaultPrefs          = [NSDictionary dictionaryWithContentsOfFile:defaultPrefsFile];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:defaultPrefs];
+    NSUserDefaults * defaults              = [NSUserDefaults standardUserDefaults];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    [defaults synchronize];//make sure all are updated
+    
     okGoNow = NO;
    
     UIAlertController * alertView =   [UIAlertController
@@ -22,7 +34,7 @@
     
     alertView.view.tintColor          = [UIColor blueColor];//Agree button colour
     
-    NSMutableAttributedString *textMessage = [[NSMutableAttributedString alloc] initWithString:@"To see details on how to use this\nApplication and adjust its settings,\nplease read the notes under the\n'(i)Information' Tab-Bar choice.\n\n* Safety Note *\nTake regular breaks and avoid\n strain. If you develop discomfort\n using this App,you must stop\n using it and seek advice.\n\nThis Application is NOT\n for clinical use.\n\nv1.0.2, Copyright © 10.Feb.2017"];
+    NSMutableAttributedString *textMessage = [[NSMutableAttributedString alloc] initWithString:@"To see details on how to use this\nApplication and adjust its settings,\nplease read the notes under the\n'(i)Information' Tab-Bar choice.\n\n* Safety Note *\nTake regular breaks and avoid\n strain. If you develop discomfort\n using this App,you must stop\n using it and seek advice.\n\nThis Application is NOT\n for clinical use.\n\nv1.0.3, Copyright © 13.Feb.2017"];
     
     long lens = [textMessage length];
     [textMessage addAttribute:NSFontAttributeName

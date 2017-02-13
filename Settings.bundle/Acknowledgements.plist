@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>FooterText</key>
+			<string>This App, ABV, is designed and coded by Jonathan A. Howell (Tech).  For more help and information on the calculations, functionality and use, examine the 'Info' pages in the App.  Please see the web site www.ess.mmu.ac.uk for updates and further release information.
+</string>
+			<key>Title</key>
+			<string>Acknowledgements</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>This App, ABV, is available for one year from the date of code building and compiling, and is only available to current Staff and Students of Manchester Metropolitan University.  The data calculated in the App is not warranted in any way as accurate, and must not be used as the basis for a clinical judgment.  The App is for Educational Purposes only.
+
+This App is subject to licence restrictions on distribution governed by Apple Inc, who restrict the distribution of this App to Current Staff and Students of Manchester Metropolitan University.  No other use is licenced.
+</string>
+			<key>Title</key>
+			<string>Licence</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Acknowledgements</string>
+</dict>
+</plist>

@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAQ-Wd-leB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920.625" y="190"/>
+            <point key="canvasLocation" x="1238" y="-135"/>
         </scene>
         <!--Calculator-->
         <scene sceneID="jpP-ef-c0p">
@@ -229,14 +229,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq3-Qb-Wyc">
-                                <rect key="frame" x="87" y="355" width="68" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.89420127579999997" green="1" blue="0.66009751149999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="Portions Per Bottle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt3-pt-BXT">
                                 <rect key="frame" x="26" y="388" width="195" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -294,7 +286,7 @@
                                 <rect key="frame" x="221" y="388" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.89420127579999997" green="1" blue="0.66009751149999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -328,6 +320,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PDu-ph-iyW">
+                                <rect key="frame" x="87" y="355" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.89420127579999997" green="1" blue="0.66009751149999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="volChanged:" destination="CQ4-2T-IWn" eventType="editingDidEnd" id="mUD-pg-J8d"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="1" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -343,14 +346,14 @@
                         <outlet property="mixVolLBL" destination="IDM-Ru-CX8" id="Dcy-Zc-9Pj"/>
                         <outlet property="mixWtLBL" destination="9E7-uv-QlG" id="U0E-oG-M5B"/>
                         <outlet property="portionsLBL" destination="IIy-5N-kzJ" id="Tvd-bR-hly"/>
-                        <outlet property="totVolLBL" destination="jq3-Qb-Wyc" id="Kcr-fd-0am"/>
+                        <outlet property="totVolTF" destination="PDu-ph-iyW" id="taX-0i-ytj"/>
                         <outlet property="totWtLBL" destination="EKx-SR-pJ0" id="wpJ-HK-8fx"/>
                         <outlet property="unitsTF" destination="8fz-ZI-2zF" id="Rsx-wf-ohE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3JX-l2-AXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918.75" y="-468.75"/>
+            <point key="canvasLocation" x="605.625" y="-135"/>
         </scene>
         <!--Tab Bar Navigation Controller-->
         <scene sceneID="CEj-ey-r2G">
