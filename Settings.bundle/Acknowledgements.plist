@@ -15,6 +15,27 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
+			<string>To contact the Developer of this App, Jonathan Howell, please use the information below:-
+
+Postal Address :
+MMU Cheshire
+Crewe Green Road
+Crewe
+CW1 5DU
+
+Telephone :
+0161 247 5184
+
+Email :
+J.A.Howell@mmu.ac.uk
+</string>
+			<key>Title</key>
+			<string>Contact Information</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>This App, ABV, is available for one year from the date of code building and compiling, and is only available to current Staff and Students of Manchester Metropolitan University.  The data calculated in the App is not warranted in any way as accurate, and must not be used as the basis for a clinical judgment.  The App is for Educational Purposes only.
 
 This App is subject to licence restrictions on distribution governed by Apple Inc, who restrict the distribution of this App to Current Staff and Students of Manchester Metropolitan University.  No other use is licenced.
