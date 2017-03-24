@@ -4,7 +4,7 @@
 //
 //  Created by Jon Howell on 10/02/2017.
 //  Copyright © 2017 Manchester Metropolitan University - ESS - essmobile. All rights reserved.
-//
+//  Universal IOS 8.4
 
 #import "ViewController.h"
 
@@ -69,7 +69,7 @@
     //*************************************************************
     //version, set anyway *****************************************
     //*************************************************************
-    version0 = @"1.0.3 - 13th Feb 2017";       // version no and date of build
+    version0 = @"1.0.4 - 24th Mar. 2017";       // version no and date of build
     version1 = @"MMU (C) 2017";                // copyright *** limited line space
     version2 = @"j.a.howell@mmu.ac.uk";        // author    *** to display on device
     version3 = @"http://www.ess.mmu.ac.uk";    // web site  *** settings screen
